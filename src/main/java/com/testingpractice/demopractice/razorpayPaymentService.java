@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class razorpayPaymentService implements paymentService {
     @Override
-    @GetMapping("/stripe")
+    @GetMapping("/razorpay")
     public String pay() {
         String payment= "Razorpay";
         System.out.println("payemnt from " +payment);
